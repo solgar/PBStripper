@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6211391D4902390095FC7C /* stripper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E6211381D4902390095FC7C /* stripper.jpg */; };
 		6E7DB9D61D3983C400C26461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D51D3983C400C26461 /* AppDelegate.swift */; };
 		6E7DB9D81D3983C400C26461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D71D3983C400C26461 /* Assets.xcassets */; };
 		6E7DB9DB1D3983C400C26461 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D91D3983C400C26461 /* MainMenu.xib */; };
-		6E7DB9E61D398AE000C26461 /* stripper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9E51D398AE000C26461 /* stripper.jpg */; };
 		6E7DB9E81D399CE500C26461 /* PBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DB9E71D399CE500C26461 /* PBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E6211381D4902390095FC7C /* stripper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stripper.jpg; path = PBStripper/stripper.jpg; sourceTree = "<group>"; };
 		6E7DB9D21D3983C400C26461 /* PBStripper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBStripper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7DB9D51D3983C400C26461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E7DB9D71D3983C400C26461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E7DB9DA1D3983C400C26461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6E7DB9DC1D3983C400C26461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E7DB9E51D398AE000C26461 /* stripper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stripper.jpg; path = ../../Downloads/stripper.jpg; sourceTree = "<group>"; };
 		6E7DB9E71D399CE500C26461 /* PBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +67,7 @@
 		6E7DB9E41D39870F00C26461 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6E7DB9E51D398AE000C26461 /* stripper.jpg */,
+				6E6211381D4902390095FC7C /* stripper.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -130,8 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6211391D4902390095FC7C /* stripper.jpg in Resources */,
 				6E7DB9D81D3983C400C26461 /* Assets.xcassets in Resources */,
-				6E7DB9E61D398AE000C26461 /* stripper.jpg in Resources */,
 				6E7DB9DB1D3983C400C26461 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
