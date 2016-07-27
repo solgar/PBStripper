@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E7DB9D61D3983C400C26461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D51D3983C400C26461 /* AppDelegate.swift */; };
+		6E7DB9D81D3983C400C26461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D71D3983C400C26461 /* Assets.xcassets */; };
+		6E7DB9DB1D3983C400C26461 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D91D3983C400C26461 /* MainMenu.xib */; };
+		6E7DB9E61D398AE000C26461 /* stripper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9E51D398AE000C26461 /* stripper.jpg */; };
+		6E7DB9E81D399CE500C26461 /* PBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DB9E71D399CE500C26461 /* PBManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E7DB9D21D3983C400C26461 /* PBStripper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBStripper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7DB9D51D3983C400C26461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E7DB9D71D3983C400C26461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E7DB9DA1D3983C400C26461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6E7DB9DC1D3983C400C26461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7DB9E51D398AE000C26461 /* stripper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stripper.jpg; path = ../../Downloads/stripper.jpg; sourceTree = "<group>"; };
+		6E7DB9E71D399CE500C26461 /* PBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E7DB9CF1D3983C400C26461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E7DB9C91D3983C400C26461 = {
+			isa = PBXGroup;
+			children = (
+				6E7DB9E41D39870F00C26461 /* Resources */,
+				6E7DB9D41D3983C400C26461 /* PBStripper */,
+				6E7DB9D31D3983C400C26461 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E7DB9D31D3983C400C26461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E7DB9D21D3983C400C26461 /* PBStripper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E7DB9D41D3983C400C26461 /* PBStripper */ = {
+			isa = PBXGroup;
+			children = (
+				6E7DB9D51D3983C400C26461 /* AppDelegate.swift */,
+				6E7DB9D71D3983C400C26461 /* Assets.xcassets */,
+				6E7DB9D91D3983C400C26461 /* MainMenu.xib */,
+				6E7DB9DC1D3983C400C26461 /* Info.plist */,
+				6E7DB9E71D399CE500C26461 /* PBManager.swift */,
+			);
+			path = PBStripper;
+			sourceTree = "<group>";
+		};
+		6E7DB9E41D39870F00C26461 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E7DB9E51D398AE000C26461 /* stripper.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E7DB9D11D3983C400C26461 /* PBStripper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7DB9DF1D3983C400C26461 /* Build configuration list for PBXNativeTarget "PBStripper" */;
+			buildPhases = (
+				6E7DB9CE1D3983C400C26461 /* Sources */,
+				6E7DB9CF1D3983C400C26461 /* Frameworks */,
+				6E7DB9D01D3983C400C26461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PBStripper;
+			productName = PBStripper;
+			productReference = 6E7DB9D21D3983C400C26461 /* PBStripper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E7DB9CA1D3983C400C26461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Hopbits;
+				TargetAttributes = {
+					6E7DB9D11D3983C400C26461 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6E7DB9CD1D3983C400C26461 /* Build configuration list for PBXProject "PBStripper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E7DB9C91D3983C400C26461;
+			productRefGroup = 6E7DB9D31D3983C400C26461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E7DB9D11D3983C400C26461 /* PBStripper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E7DB9D01D3983C400C26461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7DB9D81D3983C400C26461 /* Assets.xcassets in Resources */,
+				6E7DB9E61D398AE000C26461 /* stripper.jpg in Resources */,
+				6E7DB9DB1D3983C400C26461 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E7DB9CE1D3983C400C26461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7DB9D61D3983C400C26461 /* AppDelegate.swift in Sources */,
+				6E7DB9E81D399CE500C26461 /* PBManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E7DB9D91D3983C400C26461 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7DB9DA1D3983C400C26461 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E7DB9DD1D3983C400C26461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E7DB9DE1D3983C400C26461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6E7DB9E01D3983C400C26461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PBStripper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawicki.igor.PBStripper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E7DB9E11D3983C400C26461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PBStripper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawicki.igor.PBStripper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E7DB9CD1D3983C400C26461 /* Build configuration list for PBXProject "PBStripper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7DB9DD1D3983C400C26461 /* Debug */,
+				6E7DB9DE1D3983C400C26461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7DB9DF1D3983C400C26461 /* Build configuration list for PBXNativeTarget "PBStripper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7DB9E01D3983C400C26461 /* Debug */,
+				6E7DB9E11D3983C400C26461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E7DB9CA1D3983C400C26461 /* Project object */;
+}
