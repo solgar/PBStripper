@@ -14,30 +14,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var menubarItem: NSStatusItem!
     var darkMode: Bool = false
     var notification: NSUserNotification? = nil
-    let lockQueue = dispatch_queue_create("com.lawicki.igor.PBStripper.notificationQueue", nil)
-    var hideNotificationTimer: NSTimer? = nil
+    let lockQueue = DispatchQueue(label: "com.lawicki.igor.PBStripper.notificationQueue")
+    var hideNotificationTimer: Timer? = nil
     var strippingEnabled = true
     var pbManager: PBManager = PBManager.init()
 
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        menubarItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
-        let img = NSImage.init(imageLiteral: "stripper")
+        menubarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        let img = NSImage(named: NSImage.Name(rawValue: "stripper"))
         menubarItem.image = img
         menubarItem.action = #selector(menuIconClicked)
         pbManager.start()
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
-    func menuIconClicked(sender: NSObject) {
-        dispatch_sync(lockQueue) {
+    @objc func menuIconClicked(sender: NSObject) {
+        lockQueue.sync() {
             if self.notification != nil {
                 self.hideNotificationTimer?.invalidate()
-                NSUserNotificationCenter.defaultUserNotificationCenter().removeDeliveredNotification(self.notification!)
+                NSUserNotificationCenter.default.removeDeliveredNotification(self.notification!)
             }
             self.strippingEnabled = !self.strippingEnabled
             if self.strippingEnabled == true {
@@ -48,16 +48,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self.notification = NSUserNotification.init()
             self.notification!.title = "PBStripper"
             self.notification!.informativeText = "Stripping enabled: \(self.strippingEnabled)"
-            NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(self.notification!)
+            NSUserNotificationCenter.default.deliver(self.notification!)
 
-            self.hideNotificationTimer = NSTimer.scheduledTimerWithTimeInterval(2.5, target: self, selector: #selector(self.hideYoMamma), userInfo: nil, repeats: false)
+            self.hideNotificationTimer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(self.hideYoMamma), userInfo: nil, repeats: false)
         }
     }
 
-    func hideYoMamma() {
-        dispatch_sync(lockQueue) {
+    @objc func hideYoMamma() {
+        lockQueue.sync() {
             if self.notification != nil {
-                NSUserNotificationCenter.defaultUserNotificationCenter().removeDeliveredNotification(self.notification!)
+                NSUserNotificationCenter.default.removeDeliveredNotification(self.notification!)
                 self.notification = nil
             }
         }
