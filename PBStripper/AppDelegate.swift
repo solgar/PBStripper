@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var darkMode: Bool = false
     var notification: NSUserNotification? = nil
     let lockQueue = DispatchQueue(label: "com.lawicki.igor.PBStripper.notificationQueue")
-    var hideNotificationTimer: Timer? = nil
+    var hideNotificationTimer: Timer = Timer()
     var strippingEnabled = true
     var pbManager: PBManager = PBManager.init()
 
@@ -26,6 +26,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let img = NSImage(named: "stripper")
         menubarItem.image = img
         menubarItem.action = #selector(menuIconClicked)
+        guard let button = menubarItem.button else {
+            fatalError("Failed to create menu bar item button.")
+        }
+        button.image = NSImage(named: "stripper")
+        button.image!.isTemplate = true
+        button.target = self
+        button.action = #selector(menuIconClicked)
         pbManager.start()
     }
 
@@ -35,9 +42,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func menuIconClicked(sender: NSObject) {
         lockQueue.sync() {
-            if self.notification != nil {
-                self.hideNotificationTimer?.invalidate()
-                NSUserNotificationCenter.default.removeDeliveredNotification(self.notification!)
+            if let pending = self.notification {
+                self.hideNotificationTimer.invalidate()
+                NSUserNotificationCenter.default.removeDeliveredNotification(pending)
             }
             self.strippingEnabled = !self.strippingEnabled
             if self.strippingEnabled == true {
@@ -56,8 +63,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func hideYoMamma() {
         lockQueue.sync() {
-            if self.notification != nil {
-                NSUserNotificationCenter.default.removeDeliveredNotification(self.notification!)
+            if let notification = self.notification {
+                NSUserNotificationCenter.default.removeDeliveredNotification(notification)
                 self.notification = nil
             }
         }
