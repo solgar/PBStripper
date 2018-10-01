@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         menubarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        let img = NSImage(named: NSImage.Name(rawValue: "stripper"))
+        let img = NSImage(named: "stripper")
         menubarItem.image = img
         menubarItem.action = #selector(menuIconClicked)
         pbManager.start()

@@ -104,6 +104,7 @@
 				TargetAttributes = {
 					6E7DB9D11D3983C400C26461 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -274,7 +275,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawicki.igor.PBStripper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -287,7 +288,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawicki.igor.PBStripper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
