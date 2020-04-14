@@ -11,7 +11,6 @@
 		6E7DB9D81D3983C400C26461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D71D3983C400C26461 /* Assets.xcassets */; };
 		6E7DB9DB1D3983C400C26461 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7DB9D91D3983C400C26461 /* MainMenu.xib */; };
 		6E7DB9E81D399CE500C26461 /* PBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DB9E71D399CE500C26461 /* PBManager.swift */; };
-		781788542162725100DDCD87 /* stripper.png in Resources */ = {isa = PBXBuildFile; fileRef = 781788532162725100DDCD87 /* stripper.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		6E7DB9DA1D3983C400C26461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6E7DB9DC1D3983C400C26461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E7DB9E71D399CE500C26461 /* PBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBManager.swift; sourceTree = "<group>"; };
-		781788532162725100DDCD87 /* stripper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stripper.png; path = PBStripper/stripper.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +36,6 @@
 		6E7DB9C91D3983C400C26461 = {
 			isa = PBXGroup;
 			children = (
-				6E7DB9E41D39870F00C26461 /* Resources */,
 				6E7DB9D41D3983C400C26461 /* PBStripper */,
 				6E7DB9D31D3983C400C26461 /* Products */,
 			);
@@ -62,14 +59,6 @@
 				6E7DB9E71D399CE500C26461 /* PBManager.swift */,
 			);
 			path = PBStripper;
-			sourceTree = "<group>";
-		};
-		6E7DB9E41D39870F00C26461 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				781788532162725100DDCD87 /* stripper.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +121,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E7DB9D81D3983C400C26461 /* Assets.xcassets in Resources */,
-				781788542162725100DDCD87 /* stripper.png in Resources */,
 				6E7DB9DB1D3983C400C26461 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

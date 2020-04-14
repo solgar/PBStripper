@@ -19,20 +19,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var strippingEnabled = true
     var pbManager: PBManager = PBManager.init()
 
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
         menubarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        let img = NSImage(named: "stripper")
-        menubarItem.image = img
-        menubarItem.action = #selector(menuIconClicked)
+
         guard let button = menubarItem.button else {
-            fatalError("Failed to create menu bar item button.")
+            fatalError("Cannot get menu bar button.")
         }
+
         button.image = NSImage(named: "stripper")
         button.image!.isTemplate = true
         button.target = self
         button.action = #selector(menuIconClicked)
+
         pbManager.start()
     }
 
