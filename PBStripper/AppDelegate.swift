@@ -19,6 +19,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var strippingEnabled = true
     var pbManager: PBManager = PBManager.init()
 
+    let enabledImage = NSImage(named: "stripper")!
+    let disabledImage = NSImage(named: "stripper_disabled")!
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         menubarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
@@ -26,8 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             fatalError("Cannot get menu bar button.")
         }
 
-        button.image = NSImage(named: "stripper")
-        button.image!.isTemplate = true
+        setStatusBarImage(image: enabledImage)
+
         button.target = self
         button.action = #selector(menuIconClicked)
 
@@ -46,10 +49,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             self.strippingEnabled = !self.strippingEnabled
             if self.strippingEnabled == true {
+                setStatusBarImage(image: enabledImage)
                 self.pbManager.start()
             } else {
+                setStatusBarImage(image: disabledImage)
                 self.pbManager.stop()
             }
+
             self.notification = NSUserNotification.init()
             self.notification!.title = "PBStripper"
             self.notification!.informativeText = "Stripping enabled: \(self.strippingEnabled)"
@@ -68,6 +74,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    func setStatusBarImage(image: NSImage) {
+        guard let button = menubarItem.button else {
+            fatalError("Cannot get menu bar button.")
+        }
 
+        button.image = image
+        button.image?.isTemplate = true
+    }
 }
-
